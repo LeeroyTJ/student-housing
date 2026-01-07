@@ -1,7 +1,14 @@
+import { motion } from "framer-motion"
+
 export default function Hero() {
   return (
     <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-      <div className="max-w-7xl mx-auto px-6 py-24 text-center">
+      <motion.div
+        className="max-w-7xl mx-auto px-6 py-24 text-center"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Find Safe & Verified Student Housing Near Campus
         </h1>
@@ -20,7 +27,7 @@ export default function Hero() {
             List Your Property
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
