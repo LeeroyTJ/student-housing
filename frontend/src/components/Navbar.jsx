@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom"
+
+
 export default function Navbar() {
   return (
     <header className="w-full bg-white border-b sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-600">
+        <Link to="/" className="text-2xl font-bold text-blue-600">
           UniHomes
-        </div>
+        </Link>
+
 
         {/* Links */}
         <ul className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
