@@ -6,26 +6,29 @@ const listings = [
   {
     id: 1,
     title: "Modern Bedsitter Near Campus",
-    location: "Near White House",
     price: 1600,
     type: "Bedsitter",
-    image: bedsitterImg
+    image: bedsitterImg,
+    lat: -14.2961,
+    lng: 28.5562
   },
   {
     id: 2,
     title: "Affordable Single Room",
-    location: "Waterworks",
     price: 1200,
     type: "Single Room",
-    image: singleRoomImg
+    image: singleRoomImg,
+    lat: -14.2950,
+    lng: 28.5541
   },
   {
     id: 3,
     title: "Shared Apartment for Students",
-    location: "Next to Nalochi Resort",
     price: 1300,
     type: "Shared",
-    image: sharedRoomImg
+    image: sharedRoomImg,
+    lat: -14.2942,
+    lng: 28.5570
   }
 ]
 
